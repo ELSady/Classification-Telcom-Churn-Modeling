@@ -31,7 +31,23 @@
 
 ### Model Building
 * Tree-based algorithm model were used as they can plot features importances and gives weight to features and determines which ones are contribute leading up to customer churn.
-* 3 Model used are `**Random Forest**, **Stochastic Gradient Boosting**, **LightGBM**`.
-*  
+* 3 Model used are `Random Forest, Stochastic Gradient Boosting, LightGBM`.
+
+### Model Performances
+* **Random Forest**
+*****************Train*******************
+Train Accuracy 0.9979174555092768
+Train Precision 0.9971509971509972
+Train Recall 0.9950248756218906
+Train F1 Score 0.9960868018498755
+****************************************
+******************Test*******************
+Test Accuracy 0.7881885292447472
+Test Precision 0.6219178082191781
+Test Recall 0.49134199134199136
+Test F1 Score 0.5489721886336155
+*****************************************
+
+
 
 
