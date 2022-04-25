@@ -11,7 +11,7 @@
 
 ### Data Cleaning
 * Missing values were non-existent in data, however i had to do some data cleaning and transformation for `TotalCharges`. Some of its values were left blank. For this, I replcaed those values with zero (0). On top of transforming thius object types data to its proper type, numerical.
-* Feature transfomation of `Seniorcitizen`, replacing its initial distinct value of both '0' and '1' to to 'Ye's and 'No'. And transform it to object type.
+* Feature transfomation of `Seniorcitizen`, replacing its initial distinct value of both '0' and '1' to to 'Yes" and 'No'. And transform it to object type.
 * Cross Checking if dataset had properly been cleaned.
 
 ### Exploratory Data Highlight
@@ -67,7 +67,7 @@
 > Test Recall 0.5411255411255411 <br>
 > Test F1 Score 0.5807200929152148 <br>
 
-### Best Model Confusion Matrix and CLassificatio Reports
+### Best Model Confusion Matrix and Classificatio Reports
 
 
 
