@@ -36,8 +36,6 @@
 ### Model Performances
 * **Random Forest**
 ```
-
-
 *****************Train*******************
 Train Accuracy 0.9979174555092768
 Train Precision 0.9971509971509972
