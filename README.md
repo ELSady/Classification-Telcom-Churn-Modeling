@@ -16,23 +16,21 @@
 
 ### Exploratory Data Highlight
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png)
-
 ### Frequency Distribution of Churn per PhoneService and InternetService
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index2.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png)
 
 ### Frequency Distribution of Churn per StreamingTV and StreamingMovies
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index3.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index2.png)
 
 ### Frequency Distribution of Churn per PaymentMethod and PaperlessBIlling
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index4.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index3.png)
 
 ### Frequency Distribution of Income per Contract
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index5.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index4.png)
 
 ### Data Preparation Before Modeling
 * Imbalanced target feature `Churn` checking. This is to ensure which scoring parameter is best used for dataset.
