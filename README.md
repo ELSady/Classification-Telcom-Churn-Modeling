@@ -67,6 +67,22 @@
 > Test Recall 0.5411255411255411 <br>
 > Test F1 Score 0.5807200929152148 <br>
 
+### Best Model Confusion Matrix and CLassificatio Reports
+
+
+
+* Classification Reports
+
+               precision    recall  f1-score   support
+
+           0       0.85      0.89      0.87      1299
+           1       0.64      0.55      0.59       462
+
+    accuracy                           0.80      1761
+   macro avg       0.74      0.72      0.73      1761
+weighted avg       0.79      0.80      0.80      1761
+
+
 
 
 
