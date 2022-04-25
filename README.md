@@ -35,41 +35,56 @@
 
 ### Model Performances
 * **Random Forest**
-> Train Accuracy 0.9979174555092768 <br>
-> Train Precision 0.9971509971509972 <br>
-> Train Recall 0.9950248756218906 <br>
-> Train F1 Score 0.9960868018498755 <br>
+```
 
-> Test Accuracy 0.7881885292447472 <br>
-> Test Precision 0.6219178082191781 <br>
-> Test Recall 0.49134199134199136 <br>
-> Test F1 Score 0.5489721886336155 <br>
+
+*****************Train*******************
+Train Accuracy 0.9979174555092768
+Train Precision 0.9971509971509972
+Train Recall 0.9950248756218906
+Train F1 Score 0.9960868018498755
+****************************************
+******************Test*******************
+Test Accuracy 0.7881885292447472
+Test Precision 0.6219178082191781
+Test Recall 0.49134199134199136
+Test F1 Score 0.5489721886336155
+*****************************************
+```
 
 * **Stochastic Gradient Boosting**
-> Train Accuracy 0.8330177962892844 <br>
-> Train Precision 0.7312775330396476 <br>
-> Train Recall 0.589907604832978 <br>
-> Train F1 Score 0.6530291109362707 <br>
-
-> Test Accuracy 0.8012492901760363 <br>
-> Test Precision 0.6414141414141414 <br>
-> Test Recall 0.5497835497835498 <br>
-> Test F1 Score 0.592074592074592 <br>
+```
+*****************Train*******************
+Train Accuracy 0.8330177962892844
+Train Precision 0.7312775330396476
+Train Recall 0.589907604832978
+Train F1 Score 0.6530291109362707
+****************************************
+******************Test*******************
+Test Accuracy 0.8012492901760363
+Test Precision 0.6414141414141414
+Test Recall 0.5497835497835498
+Test F1 Score 0.592074592074592
+*****************************************
+```
 
 * **LightGBM**
-> Train Accuracy 0.8835668307459296 <br>
-> Train Precision 0.8245901639344262 <br>
-> Train Recall 0.7149964463397299 <br>
-> Train F1 Score 0.7658926532165969 <br>
-
-> Test Accuracy 0.7950028392958546 <br>
-> Test Precision 0.6265664160401002 <br>
-> Test Recall 0.5411255411255411 <br>
-> Test F1 Score 0.5807200929152148 <br>
+```
+*****************Train*******************
+Train Accuracy 0.8835668307459296
+Train Precision 0.8245901639344262
+Train Recall 0.7149964463397299
+Train F1 Score 0.7658926532165969
+****************************************
+******************Test*******************
+Test Accuracy 0.7950028392958546
+Test Precision 0.6265664160401002
+Test Recall 0.5411255411255411
+Test F1 Score 0.5807200929152148
+*****************************************
+```
 
 ### Best Model Confusion Matrix and Classificatio Reports
-
-
 
 * Classification Reports
 ```
