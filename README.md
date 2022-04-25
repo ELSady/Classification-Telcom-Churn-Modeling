@@ -73,7 +73,7 @@
 
 * Classification Reports
 ```
-               precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
            0       0.85      0.89      0.87      1299
            1       0.64      0.55      0.59       462
