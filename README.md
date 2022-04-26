@@ -20,10 +20,13 @@
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png)
 
+* As we can see, customers who subscibe to DSL type of internet service are more likely to to not churn, while the opposite is true. This is evident by the high number of customers distribution in that regards. This is also true for those customers who are at the same time using the phone service on top of internet service will also more likely to continue using the services.
+
 ### Frequency Distribution of Churn per StreamingTV and StreamingMovies
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index2.png)
 
+* 
 ### Frequency Distribution of Churn per PaymentMethod and PaperlessBIlling
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index3.png)
