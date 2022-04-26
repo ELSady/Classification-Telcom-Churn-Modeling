@@ -107,8 +107,6 @@ Test F1 Score 0.5807200929152148
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index.png)
 
-* 
-
 * Classification Reports
 ```
                 precision    recall  f1-score   support
