@@ -34,13 +34,14 @@
 
 * As for how customers paying their annual subscription fee, the ones who more likey to prolong their subscription are those paying with either of this 3 methods, Mailed Check, Bank Transfer and Credit Card. On the other hand, customers who churn from subscription are dominated by the ones who pay their annual fee by using Electronic Check. 
 
-### Frequency Distribution of Income per Contract
-
-* Its clear in regards to subscription contract,  customers who are more likely to churn from subsciption are those who only agree upon month by month basis contract subscription. It is understood, usually for customers like them, they are doing trial month before deciding to use Telcom's services.
+### Frequency Distribution of Churn per Contract
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index4.png)
 
+* Its clear in regards to subscription contract,  customers who are more likely to churn from subsciption are those who only agree upon month by month basis contract subscription. It is understood, usually for customers like them, they are doing trial month before deciding to use Telcom's services.
+* 
 ### Data Preparation Before Modeling
+
 * Imbalanced target feature `Churn` checking. This is to ensure which scoring parameter is best used for dataset.
 * Train and Test splitting with a proportion of 75% Train and 20% Test.
 * Standardizing for numerical data using Robust scaler and Onehot encoder for categorical features.
@@ -98,10 +99,15 @@ Test F1 Score 0.5807200929152148
 *****************************************
 ```
 
+* Amongst the 3 model tested, `Stochastic Gradient Boosting`model has the edge over the rests, indicated by its higher number of scores like `Accuracy, F1, Precision, Recall`. Will be using this model as a base to build an optimized model further improving the scores. 
+* The Optimized model were build upon the SGB model. Optimization are done to reduce basically non performing features, features which contribute less or even dont contributes at all to prediction scores. The value of these can bee seen using model integrated's feature importance. 
+
 ### Best Model Confusion Matrix and Classificatio Reports
 * Confusion Matrix
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index.png)
+
+* 
 
 * Classification Reports
 ```
