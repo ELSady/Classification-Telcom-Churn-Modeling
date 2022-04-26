@@ -26,12 +26,17 @@
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index2.png)
 
-* 
+* Customers who are subcribing to both service of Movies and TV streaming are mmore likely to not churn from the services. Evidence by the high number of customers count distribution in that regards. Meanwhile, for customers who are only subscribing to either of said services wont likely to prolong their subscription.
+
 ### Frequency Distribution of Churn per PaymentMethod and PaperlessBIlling
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index3.png)
 
+* As for how customers paying their annual subscription fee, the ones who more likey to prolong their subscription are those paying with either of this 3 methods, Mailed Check, Bank Transfer and Credit Card. On the other hand, customers who churn from subscription are dominated by the ones who pay their annual fee by using Electronic Check. 
+
 ### Frequency Distribution of Income per Contract
+
+* Its clear in regards to subscription contract,  customers who are more likely to churn from subsciption are those who only agree upon month by month basis contract subscription. It is understood, usually for customers like them, they are doing trial month before deciding to use Telcom's services.
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index4.png)
 
