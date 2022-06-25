@@ -5,21 +5,43 @@
 * Data Exploration gives us better understanding which any of the criterias leading up to customer end subscribing to telcom's internet / broadband service.
 * Using several classifier models to determine which features contributes the most in terms of customer churn.
 
-
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png) <br>
 
 Customer attrition (a.k.a customer churn) is one of the biggest expenditures of any organization. If we could figure out why a customer leaves and when they leave with reasonable accuracy, it would immensely help the organization to strategize their retention initiatives manifold. Let’s make use of athis Telco customer transaction dataset from to understand the key steps involved in predicting customer attrition. <br>
 
-Supervised Machine Learning is nothing but learning a function that maps an input to an output based on example input-output pairs. A supervised machine learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples. Given that we have data on current and prior customer transactions in the telecom dataset, this is a standardized supervised classification problem that tries to predict a binary outcome (Y/N).
+Supervised Machine Learning is nothing but learning a function that maps an input to an output based on example input-output pairs. A supervised machine learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples. Given that we have data on current and prior customer transactions in the telecom dataset, this is a standardized supervised classification problem that tries to predict a binary outcome (Y/N). <br>
+
+Defining business problems <br>
+### Business Problems :
+ * What is the probability of a customer to stop / churning from using the services?
+ * Which factors play the most role when it comes to churn?
+ * WHat business actions needed to be taken to addres / minimize this issue?
+
+Machine Learning Frame work step by step:
+* Dataset Profiling
+* Data Cleaning if theres any missing value
+* Visualization 
+* Pre processing dataset
+* Model selection and training
+* Performaces Evauation
 
 ### Code and Resources Used
 * **Packages** : pandas, numpy, matplotlib, seaborn, sci-kit learn, shap, yellowbrick, lightgbm.
 
+### Dataset Profiling
+
+### Features Types
+
 ### Data Cleaning
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png) <br>
+
 * Missing values were non-existent in data, however i had to do some data cleaning and transformation for `TotalCharges`. Some of its values were left blank. For this, I replcaed those values with zero (0). On top of transforming thius object types data to its proper type, numerical.
 * Feature transfomation of `Seniorcitizen`, replacing its initial distinct value of both '0' and '1' to to 'Yes" and 'No'. And transform it to object type.
-* Cross Checking if dataset had properly been cleaned.
+* Cross Checking if dataset had properly been cleaned. <br>
 
-### Exploratory Data Highlight
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png)
+
+### Exploratory Data / Visualization
 
 ### Frequency Distribution of Churn per PhoneService and InternetService
 
