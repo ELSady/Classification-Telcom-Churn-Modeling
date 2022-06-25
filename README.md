@@ -3,8 +3,13 @@
 * Telcom customer records data of over 7000 ID's / customers.
 * Feature engineered and transformation for dataset to better be read and be implemented to model.
 * Data Exploration gives us better understanding which any of the criterias leading up to customer end subscribing to telcom's internet / broadband service.
-* Using `Tree-based algorithm's feature importance` to determine which features contributes the most in terms of customer churn.
-* Optimized Tree-based algorithm to output higher score `Accuracy, F1, Precision, Recall`.
+* Using several classifier models to determine which features contributes the most in terms of customer churn.
+
+
+
+Customer attrition (a.k.a customer churn) is one of the biggest expenditures of any organization. If we could figure out why a customer leaves and when they leave with reasonable accuracy, it would immensely help the organization to strategize their retention initiatives manifold. Let’s make use of athis Telco customer transaction dataset from to understand the key steps involved in predicting customer attrition. <br>
+
+Supervised Machine Learning is nothing but learning a function that maps an input to an output based on example input-output pairs. A supervised machine learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples. Given that we have data on current and prior customer transactions in the telecom dataset, this is a standardized supervised classification problem that tries to predict a binary outcome (Y/N).
 
 ### Code and Resources Used
 * **Packages** : pandas, numpy, matplotlib, seaborn, sci-kit learn, shap, yellowbrick, lightgbm.
