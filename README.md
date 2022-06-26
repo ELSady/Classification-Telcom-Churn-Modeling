@@ -117,8 +117,4 @@ Insights we can made from the distribtion plot:
 * Customers with a month-to-month connection have a very high probability to churn that too if they have subscribed to pay via electronic checks.
 * Many of the customer are younger ones.
 * There are a lot of new customers in the organization (less than 10 months old) followed by a loyal customer base that’s above 70 months old.
-
-### Business Action 
-
-
-
+* 
