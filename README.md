@@ -44,10 +44,16 @@ Defining business problems <br>
 
 ### Descriptive Statistics
 
-* A quick look at the statistics suggests that, on average telco customers are staying for 32 months and are paying $64 per month. However, this could potentially be because different customers have different contracts. From the looks of things, we can presume that dataset contains several features which will provide an various informations about the customer transation. 
+* A quick look at the statistics suggests that, on average telco customers are staying for 32 months and are paying $64 per month. However, this could potentially be because different customers have different contracts.
 
-### Features Distribution
+### Features Unique Value Checking
+* ‘Payment Methods’ and ‘Contract’ are the two categorical variables in the dataset. When we look into the unique values in each categorical variables, we get an insight that the customers are either on a month-to-month rolling contract or on a fixed contract for one/two years. Also, they are paying bills via credit card, bank transfer or electronic checks.
 
+### Numerical Features Distribution
+Insights we can made from the distribtion plot:
+* Majority of customer are paying total charges for the services of around 300 to 500
+* Whilst for monthly charges they have to pay on average is around 25 to 30
+* It is also inferred that there are many new customers (less than 10 months old) and many loyal customers (more than 70 months old), the rest are in between those two categoriews.
 ### Boxplot Plotting
 
 ### Exploratory Data / Visualization
@@ -75,86 +81,14 @@ Defining business problems <br>
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index4.png)
 
 * Its clear in regards to subscription contract,  customers who are more likely to churn from subsciption are those who only agree upon month by month basis contract subscription. It is understood, usually for customers like them, they are doing trial month before deciding to use Telcom's services.
-* 
+
 ### Data Preparation Before Modeling
 
 * Imbalanced target feature `Churn` checking. This is to ensure which scoring parameter is best used for dataset.
-* Train and Test splitting with a proportion of 75% Train and 20% Test.
-* Standardizing for numerical data using Robust scaler and Onehot encoder for categorical features.
+* COnfirmed. dataset is ont imblaanced, so instead of accuracy, ROC / AUC score will be the propr evaluation metric of models 
+* Preprocessing data with pycaret with the following parameters:
 
-### Model Building
-* Tree-based algorithm model were used as they can plot features importances and gives weight to features and determines which ones are contribute leading up to customer churn.
-* 3 Model used are `Random Forest, Stochastic Gradient Boosting, LightGBM`.
-
-### Model Performances
-* **Random Forest**
-```
-*****************Train*******************
-Train Accuracy 0.9979174555092768
-Train Precision 0.9971509971509972
-Train Recall 0.9950248756218906
-Train F1 Score 0.9960868018498755
-****************************************
-******************Test*******************
-Test Accuracy 0.7881885292447472
-Test Precision 0.6219178082191781
-Test Recall 0.49134199134199136
-Test F1 Score 0.5489721886336155
-*****************************************
-```
-
-* **Stochastic Gradient Boosting**
-```
-*****************Train*******************
-Train Accuracy 0.8330177962892844
-Train Precision 0.7312775330396476
-Train Recall 0.589907604832978
-Train F1 Score 0.6530291109362707
-****************************************
-******************Test*******************
-Test Accuracy 0.8012492901760363
-Test Precision 0.6414141414141414
-Test Recall 0.5497835497835498
-Test F1 Score 0.592074592074592
-*****************************************
-```
-
-* **LightGBM**
-```
-*****************Train*******************
-Train Accuracy 0.8835668307459296
-Train Precision 0.8245901639344262
-Train Recall 0.7149964463397299
-Train F1 Score 0.7658926532165969
-****************************************
-******************Test*******************
-Test Accuracy 0.7950028392958546
-Test Precision 0.6265664160401002
-Test Recall 0.5411255411255411
-Test F1 Score 0.5807200929152148
-*****************************************
-```
-
-* Amongst the 3 model tested, `Stochastic Gradient Boosting`model has the edge over the rests, indicated by its higher number of scores like `Accuracy, F1, Precision, Recall`. Will be using this model as a base to build an optimized model further improving the scores. 
-* The Optimized model were build upon the SGB model. Optimization are done to reduce basically non performing features, features which contribute less or even dont contributes at all to prediction scores. The value of these can bee seen using model integrated's feature importance. 
-
-### Best Model Confusion Matrix and Classificatio Reports
-* Confusion Matrix
-
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index.png)
-
-* Classification Reports
-```
-                precision    recall  f1-score   support
-
-           0       0.85      0.89      0.87      1299
-           1       0.64      0.55      0.59       462
-
-    accuracy                           0.80      1761
-   macro avg       0.74      0.72      0.73      1761
-weighted avg       0.79      0.80      0.80      1761
-```
-
+### Building and Evaluating Models Performances
 
 
 
