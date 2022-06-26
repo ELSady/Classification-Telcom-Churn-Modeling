@@ -86,44 +86,61 @@ Insights we can made from the distribtion plot:
 
 ### Frequency Distribution of Churn per PaymentMethod and PaperlessBIlling
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index5.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index6.png)
 
 * As for how customers paying their annual subscription fee, the ones who more likey to prolong their subscription are those paying with either of this 3 methods, Mailed Check, Bank Transfer and Credit Card. On the other hand, customers who churn from subscription are dominated by the ones who pay their annual fee by using Electronic Check. 
 
 ### Frequency Distribution of Churn per Contract
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index6.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index5.png)
 
 * Its clear in regards to subscription contract,  customers who are more likely to churn from subsciption are those who only agree upon month by month basis contract subscription. It is understood, usually for customers like them, they are doing trial month before deciding to use Telcom's services.
 
 ### Data Preparation Before Modeling
+* Imbalanced target feature `Churn` checking. This is to ensure which scoring parameter is best used for dataset. <br>
 
-* Imbalanced target feature `Churn` checking. This is to ensure which scoring parameter is best used for dataset.
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-14-54%20Churn%20Classification%20-%20Jupyter%20Notebook.png) <br>
 
 * It is confirmed. dataset is ont imblaanced, so instead of accuracy, ROC / AUC score will be the propr evaluation metric of models 
-* Preprocessing data with pycaret with the following parameters:
+* Preprocessing data with pycaret with the following parameters: <br>
 
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-15-19%20Churn%20Classification%20-%20Jupyter%20Notebook.png)
 
 ### Building and Evaluating Models Performances
 
 * To do a quick comparison and evaluation to models, we ussualy want to check the `Accuracy` score. Classification accuracy itself is a metric that summarizes the performance of a classification model as the number of correct predictions divided by the total number of predictions.
 * However because noted, our dataset is not an imbbalanced one, so the appropriate metric to evaluate can be either `ROC` or `AUC` score that is otherwise will be a misleading should we use the Accuracy metric.
 *  AUC - ROC curve is a performance measurement for the classification problems at various threshold settings. ROC is a probability curve and AUC represents the degree or measure of separability. It tells how much the model is capable of distinguishing between classes. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1. By analogy, the Higher the AUC, the better the model is at distinguishing between customer which will curn and not churn.
+
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-15-41%20Churn%20Classification%20-%20Jupyter%20Notebook.png)
+
 * So, based on the AUC score here we have the best 3 models used as a base. Logistic Regression, Adaboost and Gradient Boosting with a very good AUC score of around 0.85.
 
 ### Feature Importances 
+* Logistic Regression <br>
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index7.png) <br>
+
+* ADAboost <br>
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index8.png) <br>
+
+* Gradient Boosting <br>
+ ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index9.png) <br>
+
 * Taking a look at the featuer importances of the 3 models. Tenure and Total Charges and contract types play a huge role to determine the likelihood of a customer to churn or keep using the services provided by telco.
 * Recall back on our visualization, it is indeed correct, customers who likely to hurn are those who ona short period time tenure hence the low charges count, and the oppsite is true, ones who have been a customer for a long time have a higher charges count.
 * The same applies to contract types, customers who are more likely to churn are those who only agree upon month by month basis contract subscription.
 * Seems the model is good fit to dataset.
 
 ### Confusion Matrix Model Evaluation
-* A confusion matrix is a table that is used to define the performance of a classification algorithm. A confusion matrix visualizes and summarizes the performance of a classification algorithm. 
+* A confusion matrix is a table that is used to define the performance of a classification algorithm. A confusion matrix visualizes and summarizes the performance of a classification algorithm. <br>
 
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index10.png)
 
 * Confusioin matrix above shows the model (ADAboost) have a total of 1375 + 301 correct predicitons while it also has 260 + 177 wrong predictions.
 
 ### Predicition on unseen data
+
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-17-35%20Churn%20Classification%20-%20Jupyter%20Notebook.png)
 
 * Impressive, the models we used (ADAboost) still retain a very good score of AUC with 0.85 on predicting the unseen dataset. This is the model we are going to use for classifiying customer churn.
 
