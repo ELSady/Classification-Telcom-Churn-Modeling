@@ -5,7 +5,7 @@
 * Data Exploration gives us better understanding which any of the criterias leading up to customer end subscribing to telcom's internet / broadband service.
 * Using several classifier models to determine which features contributes the most in terms of customer churn.
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png) <br>
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/1%20S1cWdTfyeF-Rp64ht1rkuQ.jpeg) <br>
 
 Customer attrition (a.k.a customer churn) is one of the biggest expenditures of any organization. If we could figure out why a customer leaves and when they leave with reasonable accuracy, it would immensely help the organization to strategize their retention initiatives manifold. Let’s make use of athis Telco customer transaction dataset from to understand the key steps involved in predicting customer attrition. <br>
 
@@ -29,20 +29,28 @@ Defining business problems <br>
 * **Packages** : pandas, numpy, matplotlib, seaborn, sci-kit learn, shap, yellowbrick, lightgbm.
 
 ### Dataset Profiling
-* Dataset consists of 7043 observations and 23 columns with a total dataset size of 147903.
+* Dataset consists of 7043 observations and 23 columns with a total dataset size of 147903. <br>
+
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-09-19%20Churn%20Classification%20-%20Jupyter%20Notebook.png) <br>
+
 ### Features Types
- * Majority of features fall on categorical one, meanwhile the rest of 3 are numerical. Notable numerical ones include, TotalCharge, Monthly Charge and tenure.
+ * Majority of features fall on categorical one, meanwhile the rest of 3 are numerical. Notable numerical ones include, TotalCharge, Monthly Charge and tenure.<br>
+
+![alt text]([https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-10-01%20Churn%20Classification%20-%20Jupyter%20Notebook.png)) <br>
  
 ### Data Cleaning
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png) <br>
+
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-12-11%20Churn%20Classification%20-%20Jupyter%20Notebook.png) <br>
 
 * Missing values were non-existent in data, however i had to do some data cleaning and transformation for `TotalCharges`. Some of its values were left blank. For this, I replcaed those values with zero (0). On top of transforming thius object types data to its proper type, numerical.
 * Feature transfomation of `Seniorcitizen`, replacing its initial distinct value of both '0' and '1' to to 'Yes" and 'No'. And transform it to object type.
 * Cross Checking if dataset had properly been cleaned. <br>
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-12-40%20Churn%20Classification%20-%20Jupyter%20Notebook.png) <br>
 
 ### Descriptive Statistics
+
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-12-57%20Churn%20Classification%20-%20Jupyter%20Notebook.png) <br>
 
 * A quick look at the statistics suggests that, on average telco customers are staying for 32 months and are paying $64 per month. However, this could potentially be because different customers have different contracts.
 
@@ -50,35 +58,41 @@ Defining business problems <br>
 * ‘Payment Methods’ and ‘Contract’ are the two categorical variables in the dataset. When we look into the unique values in each categorical variables, we get an insight that the customers are either on a month-to-month rolling contract or on a fixed contract for one/two years. Also, they are paying bills via credit card, bank transfer or electronic checks.
 
 ### Numerical Features Distribution
+
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index.png)
+
 Insights we can made from the distribtion plot:
 * Majority of customer are paying total charges for the services of around 300 to 500
 * Whilst for monthly charges they have to pay on average is around 25 to 30
 * It is also inferred that there are many new customers (less than 10 months old) and many loyal customers (more than 70 months old), the rest are in between those two categoriews.
+
 ### Boxplot Plotting
+
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index2.png)
 
 ### Exploratory Data / Visualization
 
 ### Frequency Distribution of Churn per PhoneService and InternetService
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index3.png)
 
 * As we can see, customers who subscibe to DSL type of internet service are more likely to to not churn, while the opposite is true. This is evident by the high number of customers distribution in that regards. This is also true for those customers who are at the same time using the phone service on top of internet service will also more likely to continue using the services.
 
 ### Frequency Distribution of Churn per StreamingTV and StreamingMovies
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index2.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index4.png)
 
 * Customers who are subcribing to both service of Movies and TV streaming are mmore likely to not churn from the services. Evidence by the high number of customers count distribution in that regards. Meanwhile, for customers who are only subscribing to either of said services wont likely to prolong their subscription.
 
 ### Frequency Distribution of Churn per PaymentMethod and PaperlessBIlling
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index3.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index5.png)
 
 * As for how customers paying their annual subscription fee, the ones who more likey to prolong their subscription are those paying with either of this 3 methods, Mailed Check, Bank Transfer and Credit Card. On the other hand, customers who churn from subscription are dominated by the ones who pay their annual fee by using Electronic Check. 
 
 ### Frequency Distribution of Churn per Contract
 
-![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index4.png)
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index6.png)
 
 * Its clear in regards to subscription contract,  customers who are more likely to churn from subsciption are those who only agree upon month by month basis contract subscription. It is understood, usually for customers like them, they are doing trial month before deciding to use Telcom's services.
 
