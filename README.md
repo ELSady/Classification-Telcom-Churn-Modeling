@@ -17,7 +17,7 @@ Defining business problems <br>
  * Which factors play the most role when it comes to churn?
  * WHat business actions needed to be taken to addres / minimize this issue?
 
-Machine Learning Frame work step by step:
+### Machine Learning Frame work step by step:
 * Dataset Profiling
 * Data Cleaning if theres any missing value
 * Visualization 
@@ -29,9 +29,10 @@ Machine Learning Frame work step by step:
 * **Packages** : pandas, numpy, matplotlib, seaborn, sci-kit learn, shap, yellowbrick, lightgbm.
 
 ### Dataset Profiling
-
+* Dataset consists of 7043 observations and 23 columns with a total dataset size of 147903.
 ### Features Types
-
+ * Majority of features fall on categorical one, meanwhile the rest of 3 are numerical. Notable numerical ones include, TotalCharge, Monthly Charge and tenure.
+ 
 ### Data Cleaning
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png) <br>
 
@@ -40,6 +41,14 @@ Machine Learning Frame work step by step:
 * Cross Checking if dataset had properly been cleaned. <br>
 
 ![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png)
+
+### Descriptive Statistics
+
+* A quick look at the statistics suggests that, on average telco customers are staying for 32 months and are paying $64 per month. However, this could potentially be because different customers have different contracts. From the looks of things, we can presume that dataset contains several features which will provide an various informations about the customer transation. 
+
+### Features Distribution
+
+### Boxplot Plotting
 
 ### Exploratory Data / Visualization
 
