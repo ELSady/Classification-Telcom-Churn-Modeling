@@ -36,7 +36,7 @@ Defining business problems <br>
 ### Features Types
  * Majority of features fall on categorical one, meanwhile the rest of 3 are numerical. Notable numerical ones include, TotalCharge, Monthly Charge and tenure.<br>
 
-![alt text]([https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/index1.png](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-10-01%20Churn%20Classification%20-%20Jupyter%20Notebook.png) <br>
+![alt text](https://github.com/ELSady/Classification-Telcom-Churn-Modeling/blob/main/Screenshot%202022-06-26%20at%2015-10-01%20Churn%20Classification%20-%20Jupyter%20Notebook.png) <br>
  
 ### Data Cleaning
 
