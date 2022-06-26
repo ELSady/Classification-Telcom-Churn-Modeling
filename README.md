@@ -85,10 +85,15 @@ Insights we can made from the distribtion plot:
 ### Data Preparation Before Modeling
 
 * Imbalanced target feature `Churn` checking. This is to ensure which scoring parameter is best used for dataset.
-* COnfirmed. dataset is ont imblaanced, so instead of accuracy, ROC / AUC score will be the propr evaluation metric of models 
+
+* It is confirmed. dataset is ont imblaanced, so instead of accuracy, ROC / AUC score will be the propr evaluation metric of models 
 * Preprocessing data with pycaret with the following parameters:
+
 
 ### Building and Evaluating Models Performances
 
-
+* To do a quick comparison and evaluation to models, we ussualy want to check the `Accuracy` score. Classification accuracy itself is a metric that summarizes the performance of a classification model as the number of correct predictions divided by the total number of predictions.
+* However because noted, our dataset is not an imbbalanced one, so the appropriate metric to evaluate can be either `ROC` or `AUC` score that is otherwise will be a misleading should we use the Accuracy metric.
+*  AUC - ROC curve is a performance measurement for the classification problems at various threshold settings. ROC is a probability curve and AUC represents the degree or measure of separability. It tells how much the model is capable of distinguishing between classes. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1. By analogy, the Higher the AUC, the better the model is at distinguishing between patients with the disease and no disease.
+* So, based on the AUC score here we have the best 3 models used as a base. Logistic Regression, Adaboost and Gradient Boosting with a very good AUC score of around 0.85.
 
